@@ -1,3 +1,3 @@
 module.exports = {
-  publicPath: "/ElementUI-Theme/dist/",
+  publicPath: "/ElementUI-Theme/",
 };
