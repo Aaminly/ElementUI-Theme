@@ -1,0 +1,241 @@
+/* 改变主题色变量 */
+$--color-primary: $--theme-color;
+$--color-success: $--success-color;
+$--color-warning: $--warning-color;
+$--color-danger: $--danger-color;
+$--color-info: $--info-color;
+
+// Button
+$--button-font-size: $--btn-font-size;
+$--button-font-weight: $--btn-font-weight;
+$--button-border-radius: $--btn-radius;
+$--button-default-font-color: $--theme-color;
+$--button-default-background-color: $--btn-default-color;
+$--button-default-border-color: $--btn-default-border-color;
+$--button-primary-font-color: $--btn-primary-color;
+$--button-disabled-font-color: $--btn-disabled-font-color;
+$--button-disabled-background-color: $--btn-disabled-color;
+$--button-disabled-border-color: $--btn-disabled-color;
+
+// Menu
+$--menu-item-font-size: $--menu-font-size;
+$--menu-background-color: $--menu-color;
+$--menu-item-font-color: $--menu-font-color;
+$--menu-item-hover-fill: $--menu-active-color;
+
+// Input
+$--input-border-color-hover: $--input-border-focus-color;
+
+// Select
+
+
+/* 改变 icon 字体路径变量，必需 */
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
+
+body {
+  background-color: $--bg-color;
+
+  .el-button {
+    height: 45px;
+
+    &--default {
+
+      &:hover,
+      &:focus {
+        background-color: $--btn-default-hover;
+        color: $--btn-primary-color;
+        border-color: $--btn-default-color;
+      }
+
+    }
+
+  }
+
+  .el-menu {
+    border-right-color: $--menu-color !important;
+
+    &-item {
+      text-align: left;
+      border-bottom: 1px solid $--line-color;
+
+      >i {
+        margin-right: 10px !important;
+      }
+
+      &-group__title {
+        text-align: left;
+        padding-left: 25px !important;
+      }
+    }
+
+    .el-menu-item-group {
+      &:not(:last-child) {
+        border-bottom: 1px solid $--line-color;
+      }
+
+      .el-menu-item {
+        border: none;
+      }
+    }
+  }
+
+  .el-input {
+    &__inner {
+      border-color: $--input-border-color;
+
+      &:hover {
+        border-color: $--input-border-focus-color;
+      }
+    }
+  }
+
+  .el-select {
+    &-dropdown__item {
+      color: $--select-dropdown-font-color;
+
+      &.hover {
+        background-color: $--select-option-selected-hover;
+      }
+    }
+  }
+
+  .el-picker-panel {
+    background: $--select-dropdown-background;
+    border-color: $--select-dropdown-background;
+  }
+
+  .el-date-range-picker__content {
+    &.is-left {
+      border-color: $--datepicker-date-border-color;
+    }
+
+    .el-date-range-picker__header div {
+      color: $--datepicker-date-num;
+    }
+  }
+
+  .el-date-table {
+    th {
+      color: $--datepicker-date-num;
+      border-color: $--datepicker-date-border-color;
+    }
+
+    td {
+
+      &.start-date span,
+      &.end-date span {
+        color: $--datepicker-date-selected-font-color;
+      }
+
+      &.in-range div {
+        background-color: $--datepicker-date-selected-range-color !important;
+      }
+
+      &.next-month {
+        span {
+          color: $--datepicker-date-next-month;
+        }
+      }
+
+      &.start-date div,
+      &.end-date div {
+        background-color: $--datepicker-date-selected-range-color !important;
+      }
+
+      span {
+        color: $--datepicker-date-num;
+      }
+    }
+  }
+
+  .el-date-editor {
+    .el-range-input {
+      background-color: $--datepicker-inrange-background-color;
+      color: $--select-dropdown-font-color;
+
+      &::-webkit-input-placeholder {
+        color: $--input-placeholder-color;
+      }
+    }
+
+    .el-range-separator {
+      color: $--datepicker-date-separator;
+    }
+  }
+
+  .el-pagination {
+    &.is-background {
+
+      .btn-prev,
+      .btn-next,
+      .el-pager li {
+        color: $--pagination-button-color;
+        border: $--pagination-border;
+        border-radius: $--pagination-radius;
+
+        &:disabled {
+          color: $--pagination-disabled-color;
+        }
+
+        &.active,
+        &:not(:disabled):hover {
+          border-color: $--color-primary;
+        }
+
+      }
+
+
+    }
+  }
+
+  .el-tabs {
+    &__item {
+      height: auto;
+      font-size: $--tab-font-size;
+      color: $--tab-font-color;
+      font-weight: $--tab-font-weight;
+
+      &.is-top {
+        padding: $--tab-item-padding-is-top;
+      }
+    }
+
+    &__nav-wrap::after {
+      height: $--tab-border-width-is-top;
+      background-color: $--tab-border-color-is-top;
+    }
+
+    &__active-bar {
+      height: $--tab-border-active-bar-height;
+      border-radius: $--tab-border-active-bar-radius;
+    }
+  }
+
+  .el-time {
+    &-panel {
+      background-color: $--select-dropdown-background;
+      border-color: $--select-dropdown-background;
+
+      &__content::after,
+      &__content::before,
+      &__footer {
+        border-color: $--datepicker-date-border-color !important;
+      }
+
+    }
+
+    &-spinner__item {
+      &.active {
+        color: $--theme-color !important;
+      }
+
+      &:hover {
+        background-color: $--datepicker-date-selected-range-color !important;
+        color: $--datepicker-date-num;
+      }
+    }
+  }
+
+}
+
+@import "~element-ui/packages/theme-chalk/src/index";

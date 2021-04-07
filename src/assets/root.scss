@@ -1,0 +1,96 @@
+// Global
+$--bg-color: #1E1E1E; // 页面背景色
+$--theme-color: #C8A77F; // 页面主体色
+$--area-color: #282828; // 页面区域背景色
+$--line-color: #373737; // 页面分割线颜色
+$--form-color: #282828; // 表单列表背景色
+$--border-color: #343434; // 边框颜色
+$--success-color: #098B52; // 正确提示色
+$--warning-color: #E6A23C; // 警告提示色
+$--danger-color: #ff6666; // 错误提示色
+$--info-color: #909399; // 信息提示色
+$--font-size: 16px; // 组件默认字号
+$--disabled-color: #353435; // 不可用字体颜色
+
+// Button
+$--btn-font-size: $--font-size; // 按钮字号
+$--btn-font-weight: 400; // 按钮字体加粗
+$--btn-height: 45px; // 按钮高度
+$--btn-radius: 6px; // 按钮圆角
+$--btn-default-color: transparent; // 普通（不写type）按钮颜色
+$--btn-default-border-color: $--theme-color; // 普通（不写type）按钮边框颜色
+$--btn-default-hover: #AB8A61; // hover颜色
+$--btn-default-focus: $--theme-color; // 按下颜色
+$--btn-border-color: $--theme-color; // 按钮边框颜色
+$--btn-primary-color: #191919; // 主按钮颜色
+$--btn-disabled-color: $--disabled-color; // 按钮不可用背景颜色
+$--btn-disabled-font-color: #fff; // 按钮不可用字体颜色
+
+// Menu
+$--menu-color: $--area-color; // menu菜单背景色
+$--menu-font-size: $--font-size; // menu字体大小
+$--menu-font-color: #f5f5f5; // menu菜单字体颜色
+$--menu-active-color: #373430; // menu菜单选中颜色
+
+// Input
+$--input-background-color: transparent; // input默认背景色
+$--input-border-color: $--border-color; // input边框颜色
+$--input-border-focus-color: $--theme-color; // input边框聚焦颜色
+$--input-font-color: #ccc; // 输入文字颜色
+$--input-placeholder-color: #999; // 提示文字颜色
+
+// Select
+$--select-border-color-hover: $--theme-color; // select hover边框颜色
+$--select-dropdown-background: $--disabled-color; // select下拉框背景色
+$--select-dropdown-border: 1px solid $--select-dropdown-background; // select下拉框边框
+$--select-dropdown-font-color: #ccc; // select下拉框字体颜色
+$--select-option-selected-hover: $--form-color; // select下拉框item hover背景颜色
+
+// DatePicker
+$--datepicker-inrange-background-color: transparent; // datepicker内部input背景色
+$--datepicker-date-num: #999; // datepicker下拉框单个日期字体颜色
+$--datepicker-date-next-month: #666; // datepicker下拉框上、下月日期字体颜色
+$--datepicker-date-border-color: #4e4e4e; // datepicker下拉框边框颜色
+$--datepicker-date-selected-font-color: #fff; // datepicker下拉框选中字体颜色
+$--datepicker-date-selected-range-color: #555; // datepicker下拉框选中区间字体颜色
+$--datepicker-date-separator: #999; // datepicker分割线颜色
+
+// Pagination
+$--pagination-background-color: transparent !important; // pagination背景颜色
+$--pagination-button-color: #ccc; // pagination两侧翻页按钮颜色
+$--pagination-button-width: 45px !important; // pagination页码宽度
+$--pagination-button-height: 45px !important; // pagination页码高度
+$--pagination-border: 1px solid $--border-color; // pagination页码border颜色
+$--pagination-radius: 7px; // pagination页码radius
+$--pagination-disabled-color: $--disabled-color; // pagination页码不可用字体颜色
+
+// Tab
+$--tab-font-size: $--font-size; // tab字体大小
+$--tab-font-color: #f5f5f5; // tab默认文字颜色
+$--tab-font-weight: 400; // tab默认文字粗细
+$--tab-item-padding-is-top: 10px 20px 5px !important; // tab顶部时 item padding
+$--tab-border-color-is-top: $--disabled-color; // tab顶部时border bottom color
+$--tab-border-width-is-top: 1px; // tab顶部时border bottom width
+$--tab-border-active-bar-height: 4px; // tab选中条高度
+$--tab-border-active-bar-radius: 2px; // tab选中条radius
+
+//Popup
+$--popover-background-color: $--select-dropdown-background; // popover箭头颜色
+$--popover-border-color: $--select-dropdown-background; // popover箭头边框颜色
+
+:root {
+  --bg-color: #{$--bg-color}; // 页面背景色
+  --theme-color: #{$--theme-color}; // 页面主体色
+  --area-color: #{$--area-color}; // 页面区域背景色
+  --line-color: #{$--line-color}; // 页面分割线颜色
+  --form-color: #{$--form-color}; // 表单列表背景色
+  --border-color: #{$--border-color}; // 边框颜色
+  --success-color: #{$--success-color}; // 正确提示色
+  --warning-color: #{$--warning-color}; // 警告提示色
+  --danger-color: #{$--danger-color}; // 错误提示色
+  --info-color: #{$--info-color}; // 信息提示色
+  --font-size: #{$--font-size}; // 字体大小
+  --disabled-color: #{$--disabled-color}; // 不可用字体颜色
+}
+
+@import "./variables.scss";
